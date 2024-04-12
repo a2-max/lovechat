@@ -1,0 +1,25 @@
+$pcolor: #008cff;
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $pcolor;
+    padding: 10px;
+
+.navwrapper{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .logo{
+        width: 50px;
+    }
+    .appname{
+        color: #fff;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+}
+}

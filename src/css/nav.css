@@ -1,0 +1,23 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #008cff;
+  padding: 10px;
+}
+nav .navwrapper {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav .navwrapper .logo {
+  width: 50px;
+}
+nav .navwrapper .appname {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}

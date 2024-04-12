@@ -1,0 +1,20 @@
+.app-description-wrapper {
+    margin-top: 50px;
+
+    .description-paragraph,
+    li {
+        text-align: justify;
+        color: #303030;
+    }
+
+    .bold {
+        font-weight: 600;
+    }
+
+    ol, li {
+        margin-top: 10px;
+    }
+    li b{
+        font-weight: 600;
+    }
+}

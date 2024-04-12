@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #fff;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .mxwidth {
+  width: 100%;
+  max-width: 1300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .mxwidth .pagetitle {
+  text-align: center;
+  font-size: 60px;
+  color: #000;
+}
+@media (max-width: 800px) {
+  .app .mxwidth .pagetitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .app .mxwidth .pagetitle {
+    font-size: 30px;
+  }
+}
+.app .mxwidth .input-output-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.app .mxwidth .input-output-wrapper .inputarea,
+.app .mxwidth .input-output-wrapper .outputarea {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #f0faff;
+  padding: 30px;
+  border: 1px solid rgba(25, 0, 255, 0.1254901961);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.app .mxwidth .input-output-wrapper .inputarea .heading,
+.app .mxwidth .input-output-wrapper .outputarea .heading {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.app .mxwidth .input-output-wrapper .inputarea form {
+  display: flex;
+  flex-direction: column;
+}
+.app .mxwidth .input-output-wrapper .inputarea form label {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.app .mxwidth .input-output-wrapper .inputarea form input,
+.app .mxwidth .input-output-wrapper .inputarea form select {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1333333333);
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  background-color: #fff;
+}
+.app .mxwidth .input-output-wrapper .inputarea form select:focus,
+.app .mxwidth .input-output-wrapper .inputarea form input:focus {
+  border: 1px solid rgba(25, 0, 255, 0.5803921569);
+}
+.app .mxwidth .input-output-wrapper .inputarea form select {
+  width: 100px;
+}
+.app .mxwidth .input-output-wrapper .inputarea form .submitbtn {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 30px;
+  padding: 5px 20px;
+  font-size: 18px;
+  background-color: #47c73c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.app .mxwidth .input-output-wrapper .inputarea form .submitbtn:hover {
+  background-color: #3fb335;
+}
+.app .mxwidth .input-output-wrapper .outputarea .outputbox {
+  height: 300px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1333333333);
+  border-radius: 10px;
+  overflow: auto;
+  padding: 10px;
+}
+.app .mxwidth .input-output-wrapper .outputarea .copybtn {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 5px 20px;
+  font-size: 18px;
+  background-color: #008cff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.app .mxwidth .input-output-wrapper .outputarea .copybtn:hover {
+  background-color: #0479da;
+}
+@media (max-width: 700px) {
+  .app .mxwidth .input-output-wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .app .mxwidth {
+    padding: 10px;
+  }
+  .app .mxwidth .input-output-wrapper {
+    padding: 0;
+  }
+  .app .mxwidth .input-output-wrapper .inputarea,
+  .app .mxwidth .input-output-wrapper .outputarea {
+    padding: 10px;
+  }
+}
+.app .footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #008cff;
+  padding: 10px;
+}
+.app .footer .footertxt {
+  color: #ffffff;
+  text-align: center;
+}
+.app .footer .footertxt a {
+  text-decoration: none;
+  color: #ffee00;
+}
+.app .footer .footertxt a:hover {
+  color: #e0d203;
+}

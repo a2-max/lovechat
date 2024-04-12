@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$pcolor: #008cff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+}
+
+.app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .mxwidth {
+        width: 100%;
+        max-width: 1300px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .pagetitle {
+            text-align: center;
+            font-size: 60px;
+            color: #000;
+        }
+
+        @media (max-width: 800px) {
+            .pagetitle {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .pagetitle {
+                font-size: 30px;
+            }
+        }
+
+        .input-output-wrapper {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+
+            .inputarea,
+            .outputarea {
+                width: 100%;
+                margin-top: 20px;
+                background-color: #f0faff;
+                padding: 30px;
+                border: 1px solid #1900ff20;
+                border-radius: 10px;
+                // box-shadow: 3px 3px 10px #0001;
+                display: flex;
+                flex-direction: column;
+
+                .heading {
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .inputarea {
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        font-size: 18px;
+                        margin-top: 10px;
+                    }
+
+                    input,
+                    select {
+                        padding: 10px;
+                        border: 1px solid #0002;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        outline: none;
+                        background-color: #fff;
+                    }
+
+                    select:focus,
+                    input:focus {
+                        border: 1px solid #1900ff94;
+                    }
+
+                    select {
+                        width: 100px;
+                    }
+
+                    .submitbtn {
+                        width: fit-content;
+                        margin-top: 30px;
+                        padding: 5px 20px;
+                        font-size: 18px;
+                        background-color: #47c73c;
+                        color: #fff;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+
+                    .submitbtn:hover {
+                        background-color: #3fb335;
+                    }
+                }
+            }
+
+            .outputarea {
+                // margin-top: 10px;
+
+                .outputbox {
+                    height: 300px;
+                    background-color: #fff;
+                    border: 1px solid #0002;
+                    border-radius: 10px;
+                    overflow: auto;
+                    padding: 10px;
+                }
+
+                .copybtn {
+                    width: fit-content;
+                    margin-top: 10px;
+                    padding: 5px 20px;
+                    font-size: 18px;
+                    background-color: #008cff;
+                    color: #fff;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                .copybtn:hover {
+                    background-color: #0479da;
+                }
+            }
+        }
+
+        @media (max-width: 700px) {
+            .input-output-wrapper {
+                flex-direction: column;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .mxwidth {
+            padding: 10px;
+
+            .input-output-wrapper {
+                padding: 0;
+
+                .inputarea,
+                .outputarea {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    // footer text
+    .footer {
+        margin-top: 50px;
+        width: 100%;
+        background-color: $pcolor;
+        padding: 10px;
+
+        .footertxt {
+            color: #ffffff;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: #ffee00;
+            }
+
+            a:hover {
+                color: #e0d203;
+            }
+        }
+    }
+}
